@@ -1,0 +1,47 @@
+  server.Form1.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly server, Version=1.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class server.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class server.CreatServer: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 port : Public
+    System.Runtime.Remoting.Channels.Tcp.TcpServerChannel ServerChannel : Public
+    System.Runtime.Remoting.Channels.Tcp.TcpChannel Channel : Public
+    System.Collections.IEnumerator EnumList : Public
+  Methods:
+    creatserver(): PrivateScope, Public, HideBySig
+    creatchannel(Int32): PrivateScope, Public, HideBySig
+    DataRecall(): PrivateScope, Public, HideBySig
+    stopserver(): PrivateScope, Public, HideBySig
+Class server.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    server.CreatServer _server : Public
+    System.String showdata : Public, Static
+    System.String Tstatc : Public, Static
+    Boolean IsInterrupt : Public, Static
+    System.Net.IPAddress SIP : Public, Static
+    Int32 port : Public, Static
+    System.Net.Sockets.TcpListener server : Public, Static
+    System.Net.Sockets.TcpClient client : Public, Static
+  Methods:
+    Interrupt_Click(Object, EventArgs): PrivateScope, Public, HideBySig
